@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Valtherion | Frontend Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Valtherion, a frontend developer building digital experiences with creativity and purpose."
+    />
+    <meta name="theme-color" content="#F2F0E8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=DM+Sans:opsz,wght@9..40,300..700&display=swap"
+    />
+    <link rel="stylesheet" href="Css/styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <script src="Js/script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <!-- TODO: replace [Your Name] and the YN initials with your name and logo. -->
+    <nav class="dock" aria-label="Primary">
+      <a class="dock__logo" href="#home" aria-label="Valtherion, home"
+        >Valtherion</a
+      >
+      <a href="#home"
+        ><svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z" /></svg
+        ><span>Home</span></a
+      >
+      <a href="#about"
+        ><svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="8" r="4" />
+          <path d="M4 21c1-4 4-6 8-6s7 2 8 6" /></svg
+        ><span>About</span></a
+      >
+      <a href="#skills"
+        ><svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M9 7l-5 5 5 5M15 7l5 5-5 5" /></svg
+        ><span>Skills</span></a
+      >
+      <a href="#projects"
+        ><svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="14" rx="3" />
+          <path d="M3 10h18" /></svg
+        ><span>Projects</span></a
+      >
+      <a href="#contact"
+        ><svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="14" rx="3" />
+          <path d="M4 7l8 6 8-6" /></svg
+        ><span>Contact</span></a
+      >
+    </nav>
+
+    <main id="main">
+      <section class="hero" id="home">
+        <p class="hero__hello">HEY, I’M Muhammad Amru</p>
+        <h1 class="hero__title">
+          <span class="line"><span style="--i: 0">Building digital</span></span>
+          <span class="line"><span style="--i: 1">experiences with</span></span>
+          <span class="line"
+            ><span style="--i: 2">creativity and purpose.</span></span
+          >
+        </h1>
+        <p class="hero__text">
+          I am a frontend developer who creates interfaces that are easy to
+          read, layouts that remain neat and aesthetic when accessed on mobile
+          devices, and interactions that feel intuitive from the very first use.
+        </p>
+        <div class="hero__actions">
+          <a class="btn" href="#projects">Explore My Work</a>
+          <a class="link" href="#about">About Me</a>
+        </div>
+        <!-- TODO: save your photo as assets/images/profile.jpg (4:5). Until then the sage placeholder shows. Set the status chip to match your real availability. -->
+        <figure class="portrait">
+          <div class="portrait__frame">
+            <span>Your photo here</span
+            ><img
+              src="asset/img/94703184-b3c8-4012-ac55-1d113bb50a33.jpg"
+              alt="Portrait of Muhammad Amru"
+              width="800"
+              height="1000"
+              decoding="async"
+            />
+          </div>
+          <figcaption>Muhammad Amru</figcaption>
+          <p class="portrait__chip">
+            <i aria-hidden="true"></i>Open to projects
+          </p>
+        </figure>
+      </section>
+
+      <section class="about" id="about" aria-labelledby="about-title">
+        <h2 class="about__lead" id="about-title">
+          I build interfaces in which every detail has a function.
+        </h2>
+        <div class="about__text reveal">
+          <p>
+            Hi, I’m Muhammad Amru. Hello, I’m Muhammad Amru. I am a student at
+            SMA Negeri 1 Kepanjen. I got into web development because I enjoy
+            exploring the world of technology, and it brings me happiness.
+          </p>
+          <p>I don't know where to start because I'm hopeless.</p>
+        </div>
+        <dl class="about__beliefs reveal">
+          <div>
+            <dt>About design</dt>
+            <dd>Decoration is used only if it serves a function.</dd>
+          </div>
+          <div>
+            <dt>About code?</dt>
+            <dd>
+              HTML, CSS, and then JavaScript only where it earns its place.
+            </dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="skills" id="skills" aria-labelledby="skills-title">
+        <h2 class="skills__title" id="skills-title">What I build with</h2>
+        <ul class="chips">
+          <li class="chip">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 5l-4 14" /></svg
+            >HTML
+          </li>
+          <li class="chip">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M9 4c-2 0-3 1-3 3v2c0 1-1 2-2 3 1 1 2 2 2 3v2c0 2 1 3 3 3M15 4c2 0 3 1 3 3v2c0 1 1 2 2 3-1 1-2 2-2 3v2c0 2-1 3-3 3"
+              /></svg
+            >CSS
+          </li>
+          <li class="chip">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="4" />
+              <text
+                x="12"
+                y="15.8"
+                text-anchor="middle"
+                font-size="9"
+                font-weight="700"
+                fill="currentColor"
+                stroke="none"
+                font-family="Space Grotesk, sans-serif"
+              >
+                JS
+              </text></svg
+            >JavaScript
+          </li>
+          <li class="chip">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <ellipse cx="12" cy="12" rx="10" ry="4" />
+              <ellipse
+                cx="12"
+                cy="12"
+                rx="10"
+                ry="4"
+                transform="rotate(60 12 12)"
+              />
+              <ellipse
+                cx="12"
+                cy="12"
+                rx="10"
+                ry="4"
+                transform="rotate(120 12 12)"
+              />
+              <circle cx="12" cy="12" r="1.5" fill="currentColor" /></svg
+            >React
+          </li>
+          <li class="chip">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="9" />
+              <path d="M9 16V8l7 9V8" /></svg
+            >Next.js
+          </li>
+          <li class="chip">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3 10c2-4 5-5 8-3.5s6 1.5 10-2.5M3 18c2-4 5-5 8-3.5s6 1.5 10-2.5"
+              /></svg
+            >Tailwind CSS
+          </li>
+          <li class="chip">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <ellipse cx="12" cy="6" rx="7" ry="3" />
+              <path
+                d="M5 6v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3"
+              /></svg
+            >Supabase
+          </li>
+          <li class="chip">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="6" cy="5" r="2" />
+              <circle cx="6" cy="19" r="2" />
+              <circle cx="18" cy="8" r="2" />
+              <path d="M6 7v10M18 10c0 4-3 5-8 6l-4 1" /></svg
+            >Git &amp; GitHub
+          </li>
+          <li class="chip">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M9 3h3v6H9a3 3 0 0 1 0-6zM12 3h3a3 3 0 0 1 0 6h-3zM9 9h3v6H9a3 3 0 0 1 0-6zM9 15h3v3a3 3 0 1 1-3-3zM15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"
+              /></svg
+            >Figma
+          </li>
+        </ul>
+      </section>
+
+      <!-- TODO: swap the placeholder frames for screenshots in assets/images/ and replace the your-username repo URLs. -->
+
+      <section class="projects" id="projects" aria-labelledby="projects-title">
+        <h2 class="projects__title" id="projects-title">Selected projects</h2>
+
+        <!-- HUMANITYTECH -->
+        <article class="project project--wide">
+          <a
+            href="https://humanitytech.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project__shot reveal"
+            aria-label="Visit HumanityTech website"
+          >
+            <img
+              src="asset/img/humanitytech.png"
+              alt="HumanityTech website preview"
+              loading="lazy"
+            />
+          </a>
+
+          <div class="project__body">
+            <h3 class="project__name">HumanityTech</h3>
+            <p>A human-centric technology platform.</p>
+
+            <ul class="stack" aria-label="Technology stack">
+              <li>Next.js 15</li>
+              <li>React 19</li>
+              <li>JavaScript</li>
+              <li>CSS3</li>
+              <li>Supabase</li>
+              <li>Supabase Auth</li>
+              <li>Row Level Security</li>
+              <li>Next.js API Routes</li>
+              <li>Groq API</li>
+              <li>Tavily API</li>
+            </ul>
+
+            <a
+              href="https://humanitytech.vercel.app/"
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit project ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- PERSONAL FINANCE -->
+        <article class="project project--tall">
+          <div class="project__body">
+            <h3 class="project__name">Personal Finance</h3>
+            <p>A web application for managing personal finances.</p>
+
+            <ul class="stack" aria-label="Technology stack">
+              <li>Next.js 15</li>
+              <li>React 19</li>
+              <li>JavaScript</li>
+              <li>CSS Native</li>
+              <li>Supabase</li>
+              <li>PostgreSQL</li>
+              <li>Recharts</li>
+              <li>Lucide React</li>
+            </ul>
+
+            <a
+              href="./page/prank.html"
+              class="link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit project ↗
+            </a>
+          </div>
+
+          <a
+            href="./page/prank.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project__shot reveal"
+            aria-label="Visit Personal Finance website"
+          >
+            <img
+              src="asset/img/personal-finance.jpg"
+              alt="Personal Finance website preview"
+              loading="lazy"
+            />
+          </a>
+        </article>
+      </section>
+
+      <!-- TODO: replace the example.com email and your-username profile URLs. -->
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <h2 class="contact__title" id="contact-title">
+          Have an idea? Let’s make it happen.
+        </h2>
+        <!-- <a class="btn btn--big" href="mailto:hello@example.com"
+          >hello@example.com</a
+        > -->
+        <ul class="socials" aria-label="Social links">
+          <li>
+            <a href="https://github.com/Amruu1" rel="noopener">GitHub</a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/xyzzooraa?dmpr=Mjl5dTVoajR6Y3Rx"
+              rel="noopener"
+              >Instagram</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a class="footer__logo" href="#home" aria-label="Back to top"
+        >Valtherion</a
+      >
+      <p>© 2026 Valtherion</p>
+      <ul class="footer__social">
+        <li>
+          <a href="https://github.com/Amruu1" rel="noopener">GitHub</a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/xyzzooraa?dmpr=Mjl5dTVoajR6Y3Rx"
+            rel="noopener"
+            >Instagram</a
+          >
+        </li>
+      </ul>
+      <p>Thanks for stopping by.</p>
+    </footer>
+
+    <dialog class="dialog" id="detail" aria-label="Project details">
+      <div class="dialog__panel">
+        <button
+          class="dialog__close"
+          type="button"
+          aria-label="Close project details"
+        >
+          Close
+        </button>
+        <div class="dialog__body"></div>
+      </div>
+    </dialog>
+  </body>
+</html>
