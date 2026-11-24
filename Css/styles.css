@@ -178,9 +178,15 @@ section[id] {
   background: var(--sage);
 }
 .dock__logo {
-  margin-right: 0.4rem;
-  font: 700 1.2rem var(--font-display) !important;
-  letter-spacing: -0.04em;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: center;
+  gap: 0.6rem;
+  white-space: nowrap;
+}
+.dock__logo i {
+  font-size: 1rem;
 }
 .dock svg {
   display: none;
@@ -304,12 +310,18 @@ section[id] {
   font-size: 0.9rem;
   font-weight: 500;
 }
+.portrait__chip {
+  white-space: nowrap;
+  z-index: 2;
+}
 .portrait__chip i {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--sage);
-  box-shadow: 0 0 0 1px var(--ink);
+  width: auto;
+  height: auto;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 0.9rem;
+  flex-shrink: 0;
 }
 
 /* About */
