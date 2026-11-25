@@ -23,10 +23,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
     <script>
       document.documentElement.classList.add("js");
     </script>
@@ -36,7 +32,6 @@
   <body>
     <a class="skip" href="#main">Skip to content</a>
 
-    <!-- TODO: replace [Your Name] and the YN initials with your name and logo. -->
     <nav class="dock" aria-label="Primary">
       <a class="dock__logo" href="#home" aria-label="Valtherion, home">
         <i class="fa-solid fa-user" aria-hidden="true"></i>
@@ -92,7 +87,6 @@
           <a class="btn" href="#projects">Explore My Work</a>
           <a class="link" href="#about">About Me</a>
         </div>
-        <!-- TODO: save your photo as assets/images/profile.jpg (4:5). Until then the sage placeholder shows. Set the status chip to match your real availability. -->
         <figure class="portrait">
           <div class="portrait__frame">
             <span>Your photo here</span
@@ -189,99 +183,120 @@
         </ul>
       </section>
 
-      <!-- TODO: swap the placeholder frames for screenshots in assets/images/ and replace the your-username repo URLs. -->
-
       <section class="projects" id="projects" aria-labelledby="projects-title">
         <h2 class="projects__title" id="projects-title">Selected projects</h2>
 
-        <!-- HUMANITYTECH -->
-        <article class="project project--wide">
-          <a
-            href="https://humanitytech.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project__shot reveal"
-            aria-label="Visit HumanityTech website"
-          >
-            <img
-              src="asset/img/humanitytech.png"
-              alt="HumanityTech website preview"
-              loading="lazy"
-            />
-          </a>
-
-          <div class="project__body">
-            <h3 class="project__name">HumanityTech</h3>
-            <p>A human-centric technology platform.</p>
-
-            <ul class="stack" aria-label="Technology stack">
-              <li>Next.js 15</li>
-              <li>React 19</li>
-              <li>JavaScript</li>
-              <li>CSS3</li>
-              <li>Supabase</li>
-              <li>Supabase Auth</li>
-              <li>Row Level Security</li>
-              <li>Next.js API Routes</li>
-              <li>Groq API</li>
-              <li>Tavily API</li>
-            </ul>
-
+        <div class="projects__grid">
+          <article class="project-card">
             <a
               href="https://humanitytech.vercel.app/"
-              class="link"
               target="_blank"
               rel="noopener noreferrer"
+              class="project-card__image"
             >
-              Visit project ↗
+              <img
+                src="asset/img/humanitytech.png"
+                alt="HumanityTech website preview"
+                loading="lazy"
+              />
+              <span class="project-card__arrow">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </span>
             </a>
-          </div>
-        </article>
 
-        <!-- PERSONAL FINANCE -->
-        <article class="project project--tall">
-          <div class="project__body">
-            <h3 class="project__name">Personal Finance</h3>
-            <p>A web application for managing personal finances.</p>
+            <div class="project-card__content">
+              <div class="project-card__top">
+                <span class="project-card__category">Web Application</span>
+                <span class="project-card__number">01</span>
+              </div>
 
-            <ul class="stack" aria-label="Technology stack">
-              <li>Next.js 15</li>
-              <li>React 19</li>
-              <li>JavaScript</li>
-              <li>CSS Native</li>
-              <li>Supabase</li>
-              <li>PostgreSQL</li>
-              <li>Recharts</li>
-              <li>Lucide React</li>
-            </ul>
+              <h3 class="project-card__title">HumanityTech</h3>
 
+              <p class="project-card__description">
+                A human-centric technology platform designed to connect
+                innovation with social well-being.
+              </p>
+
+              <ul class="project-card__stack">
+                <li>Next.js 15</li>
+                <li>React 19</li>
+                <li>JavaScript</li>
+                <li>CSS3</li>
+                <li>Supabase</li>
+                <li>Supabase Auth</li>
+                <li>Row Level Security</li>
+                <li>Next.js API Routes</li>
+                <li>Groq API</li>
+                <li>Tavily API</li>
+              </ul>
+
+              <a
+                href="https://humanitytech.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-card__link"
+              >
+                Explore project
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
             <a
               href="./page/prank.html"
-              class="link"
               target="_blank"
               rel="noopener noreferrer"
+              class="project-card__image"
             >
-              Visit project ↗
+              <img
+                src="asset/img/personal-finance.jpg"
+                alt="Personal Finance website preview"
+                loading="lazy"
+              />
+              <span class="project-card__arrow">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              </span>
             </a>
-          </div>
 
-          <a
-            href="./page/prank.html"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project__shot reveal"
-            aria-label="Visit Personal Finance website"
-          >
-            <img
-              src="asset/img/personal-finance.jpg"
-              alt="Personal Finance website preview"
-              loading="lazy"
-            />
-          </a>
-        </article>
+            <div class="project-card__content">
+              <div class="project-card__top">
+                <span class="project-card__category">Finance Dashboard</span>
+                <span class="project-card__number">02</span>
+              </div>
+
+              <h3 class="project-card__title">Personal Finance</h3>
+
+              <p class="project-card__description">
+                A personal finance application to organize transactions, monitor
+                expenses, and understand financial habits.
+              </p>
+
+              <ul class="project-card__stack">
+                <li>Next.js 15</li>
+                <li>React 19</li>
+                <li>JavaScript</li>
+                <li>CSS Native</li>
+                <li>Supabase</li>
+                <li>PostgreSQL</li>
+                <li>Recharts</li>
+                <li>Lucide React</li>
+              </ul>
+
+              <a
+                href="./page/prank.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-card__link"
+              >
+                Explore project
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
       </section>
 
-      <!-- TODO: replace the example.com email and your-username profile URLs. -->
       <section class="contact" id="contact" aria-labelledby="contact-title">
         <h2 class="contact__title" id="contact-title">
           Have an idea? Let’s make it happen.
@@ -334,18 +349,5 @@
       </ul>
       <p>Thanks for stopping by.</p>
     </footer>
-
-    <dialog class="dialog" id="detail" aria-label="Project details">
-      <div class="dialog__panel">
-        <button
-          class="dialog__close"
-          type="button"
-          aria-label="Close project details"
-        >
-          Close
-        </button>
-        <div class="dialog__body"></div>
-      </div>
-    </dialog>
-  </body>
+</body>
 </html>
